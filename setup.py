@@ -4,8 +4,6 @@
 distutils/setuptools install script.
 """
 
-import boto3
-
 try:
     from setuptools import setup
     setup
@@ -33,7 +31,7 @@ requires = [
 
 setup(
     name='boto3',
-    version=boto3.get_version(),
+    version='unstable',
     description='Low-level, data-driven core of boto 3.',
     long_description=open('README.rst').read(),
     author='Amazon Web Services',

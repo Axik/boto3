@@ -4,8 +4,6 @@
 distutils/setuptools install script.
 """
 
-import os
-import sys
 import boto3
 
 try:
@@ -20,6 +18,10 @@ packages = [
     'boto3.core',
     'boto3.sqs',
     'boto3.utils',
+    'boto3.iam',
+    'boto3.s3',
+    'boto3.sns',
+    'boto3.elastictranscoder'
 ]
 
 requires = [

@@ -33,5 +33,8 @@ log.addHandler(NullHandler())
 
 
 # A plain default ``Session`` (for convenience).
-from boto3.core.session import Session
-session = Session()
+try:
+    from boto3.core.session import Session
+    session = Session()
+except ImportError:
+    pass
